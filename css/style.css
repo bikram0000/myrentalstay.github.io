@@ -31,7 +31,7 @@ html,body{
 
 #topnavleftsection{
     position: absolute;
-    width: 280px;
+    width: 300px;
     display: flex;
     height: 100%;
     /* background-color: red; */
@@ -618,6 +618,9 @@ margin: 5px;
     #header .call{
 display: none;
 }
+    #offercards{
+        display: none;
+    }
 h1{
     font-size: 25px;
 }
@@ -656,6 +659,7 @@ h1{
 #mainpageleftsection{
 width: 100%;
     margin-left: 18%;
+    margin-top: 120px;
 }}
 @media only screen and (max-width:1024px){
       #header .call{
