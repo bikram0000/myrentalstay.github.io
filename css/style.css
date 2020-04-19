@@ -31,7 +31,7 @@ html,body{
 
 #topnavleftsection{
     position: absolute;
-    width: 250px;
+    width: 280px;
     display: flex;
     height: 100%;
     /* background-color: red; */
@@ -40,7 +40,7 @@ html,body{
 }
 
 #logo{
-    background-image: url('/images/MYRENTALSTAY-01.png');
+    background-image: url(../img/logo.png);
     height: 150px;
     width: 120px;
     background-size: cover;
@@ -294,7 +294,7 @@ nav ul li a.btn-info:last-child:hover{
    width: 40px;
     position: fixed;
     right: 65px;
-    top: 35px;
+    top: 25px;
     z-index: 2;
     cursor: pointer;
 }
