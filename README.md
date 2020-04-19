@@ -1,2 +1,0 @@
-# myrentalstay.github.io
-lander
