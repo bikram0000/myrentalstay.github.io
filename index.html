@@ -10,11 +10,32 @@
         <link rel="stylesheet" href="css/fontawesome-all.min.css">
 	</head>
 
+<!--
+       <script type="text/javascript">
+var header = document.getElementById('header');
+           window.onscroll = function(){
+               if(window.pageXOffset>100){
+                   header.style.background ="007bff";
+                   header.style.boxShadow= "0px 4px 2px grey";
+               }
+               else{
+                   header.style.background ="transparent";
+                   header.boxShadow="none";
+               }
+           }
+        </script>
+    
+-->
+
 	<body>
 
+<!--
 		<header id="header">
+             
             <div class="container">
+             
             <img src="img/logo.png" class="logo">
+             
              <div id="header-text">
                        <h1>Searching For Stays?</h1>
                  <span  class="square"></span>
@@ -25,6 +46,7 @@
                  <span class="line-3"></span>
                  </div>
                 </div>
+                   <div class="call">  <p>Call Us <i class="fas fa-phone"></i> :123456789</p> </div>
             </div>
              
             <div class="background">
@@ -38,7 +60,6 @@
                     </div>
                 </div>
                  
-<!--
             <form>
                 <div class="row">
                 <div class="col-md-6">
@@ -58,18 +79,57 @@
                     </div>
                 </div>
                 </form>
--->
             </div>
-              
+             
         </header>
+-->
+  <div id="background">
+        <div id="topnav">
+             
+            <div id="topnavleftsection">
+               <img src="img/logo.png" class="logo">
+                <div id="">
+                   <i class="fa fa-search"></i>
+                <i class="fa fa-user"></i>
+                <div id="menulogo"></div>
+                </div>
+            </div>
+            <div id="topnavrightsection">
+               <p>Call us <i class="fas fa-phone"></i> : 123456789</p> 
+            </div>
+        </div>
+        <div id="mainpage">
+            <div id="mainpageleftsection">
+                <div id="text">
+                <h1>Searching For Stays?</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, nostrum? Accusantium dolorem obcaecati voluptates fuga velit! Aliquam nulla illo, ullam animi accusamus praesentium.</p>
+                </div>
+            </div>
+            <div id="mainpagerightsection">
+                <div id="imageslider">
+                    <div class="images"></div>
+                    <div id="offercards">
+                        <div class="offer">
+                            <h2>Get 50% off on your first booking</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ratione.</p>
+                            <button>See More</button>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>      
 <nav id="sideNav">
+    
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Features</a></li>
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">Login</a></li>
             <li><a href="#">Sign-Up</a></li>
-            <li><a href="#">Submit Property</a></li>
+            <li><a href="#" class="btn btn-info">Submit Property</a></li>
     </ul>
 </nav>
         <img src="img/Group%201.png" id="Menubtn">
