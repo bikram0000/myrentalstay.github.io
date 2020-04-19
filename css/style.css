@@ -115,7 +115,7 @@ html,body{
 
 #imageslider{
     position: absolute;
-    bottom: 0%;
+    bottom: 5%;
     right: 0;
     width: 90%;
     height: 85%;
@@ -293,7 +293,7 @@ nav ul li a.btn-info:last-child:hover{
 #Menubtn{
    width: 40px;
     position: fixed;
-    right: 65px;
+    right: 40px;
     top: 25px;
     z-index: 2;
     cursor: pointer;
