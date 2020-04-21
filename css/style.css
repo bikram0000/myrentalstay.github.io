@@ -42,7 +42,7 @@ html,body{
 #logo{
     background-image: url(../img/logo.png);
     height: 150px;
-    width: 50%;
+    width: 120px;
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -79,7 +79,7 @@ html,body{
 }
 
 #mainpageleftsection{
-    width: 40%;
+    width: 50%;
     height: 100%;
     position: relative;
     /* background-color: red; */
@@ -108,7 +108,7 @@ html,body{
 
 #mainpagerightsection{
     position: relative;
-    width: 60%;
+    width: 50%;
     height: 100%;
     /* background-color: blue; */
 }
@@ -643,12 +643,7 @@ h1{
 }
  }
 }
-@media only screen and (min-width: 768px)  {
-    
-    .bhk_form input {
-/*    margin-left: -43px;*/
-}
-}
+
 @media only screen and (max-width:1024px){
 
  .bhk_form span{
