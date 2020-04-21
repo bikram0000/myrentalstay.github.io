@@ -8,7 +8,7 @@
 html,body{
     width: 100%;
     height: 100%;
-    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 }
 #background{
     width: 100%;
@@ -26,7 +26,7 @@ html,body{
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    /* background-color:red; */
+/*     background:#000;*/
 }
 
 #topnavleftsection{
@@ -45,8 +45,8 @@ html,body{
     width: 120px;
     background-size: cover;
     background-position: center;
+    position: fixed;
 }
-
 
 
 
@@ -117,7 +117,7 @@ html,body{
     position: absolute;
     bottom: 5%;
     right: 0;
-    width: 90%;
+    width: 100%;
     height: 85%;
     overflow: hidden;
     border-top-left-radius: 35px;
@@ -132,13 +132,13 @@ html,body{
 }
 
 #offercards{
-    position: absolute;
+       position: absolute;
     top: 50%;
     left: 10%;
     padding: 20px 20px;
     transform: translate(0%,-50%);
-    height: 270px;
-    width: 230px;
+    height: 200px;
+    width: 430px;
     background-color: rgba(255, 255, 255, 0.315);
     backdrop-filter: blur(5px);
     border-radius: 10px;
@@ -185,84 +185,68 @@ html,body{
     right: 7%;
 }
 
+.row.no-pad {
+  margin-right:0;
+  margin-left:0;
+   margin-top: -47px;
+}
+.bhk_form input{
+border-top-left-radius: 10px;
+    color: #ff4600;
+    font-size: 20px;
+    height: 60px;
+    border-right: none;
+    border-top: none;
+    margin-left: -50px;
+    width: 540px;
+    border-bottom: 1px solid #f1f1f1;
+    border-left: 1px solid #f1f1f1;
+    border-top-right-radius: 10px;
+    box-shadow: -5px 0px 3px 0px rgba(232, 232, 232, 1);
 
+}
+.bhk_form input::placeholder{
+   font-weight: bold;
+     color:black;
+}
+.bhk_form .btn{
+        height: 41px;
+    color: #ff4600;
+    font-size: 20px;
+        height: 60px;
+   width: 150px; 
+    margin-left: 180px;
+        line-height: 43px;
+    background: white;
+    border-bottom: 1px solid #f1f1f1;
+      font-weight: normal;
+      box-shadow: -5px 0px 3px 0px rgba(232, 232, 232, 1)
 
-/*
-#header{
-    height: 100vh;
- display: flex;
 }
-#header .call{
- margin-top: -76%;
+.bhk_form .btn.fa-search{
+    font-weight: normal;
 }
-#header .background{
-      height: 100vh;
-       background: url(../img/banner_img.jpg);
-    background-position: center;
-    background-size:cover;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
-    width:100%;
+.row.no-pad > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+    padding-bottom: 10px;
+    
 }
-.background form{
-    top:50%;
+.bhk_form  span{
+    position:absolute;
+       right: 340px;
+    top: 23px;
 }
-*/
+
+h2 { margin-top:30px; }
+
 #background .logo{
-/*    background-image: url('Group 1.png');*/
-/*    background-size: cover;*/
+
     height: 100px;
     width: 90px;
     margin-top: 30px;
 }
-/*
-#header-text{
-    max-width: 400px;
-    margin-top: 140px;
-       margin-left: 124px;
-    
-}
-#header-text h1,p{
-    text-align: center;
-     margin-left: 30px;
-}
-h1{
-    font-size: 34px;
-}
-h2{
-    font-size: 30px;
-}
-p{
-    font-size: 20px;
-    margin-bottom: 60px;
-}
-.square{
-    height: 12px;
-    width: 12px;
-    display: inline-block;
-    background: #FF4600;
-}
-.line{
-    line-height: 8px;
-}
-.line-1{
-    width: 15px;
-    height: 15px;
-    background: #FF4600;
-    display: inline-block;
-}
-.line-2{
-    width: 80px;
-    height: 1px;
-    background: #FF4600;
-    display: inline-block;
-}
-.line-3{
-   width: 60px;
-    height: 1px;
-    background: #FF4600;
-    display: inline-block;
-}*/
+
 #sideNav{
  width: 250px;
 height: 100vh;
@@ -298,63 +282,9 @@ nav ul li a.btn-info:last-child:hover{
     z-index: 2;
     cursor: pointer;
 }
-*/
 
-/*
-.background #offercards{
-    position: absolute;
 
-    top: 50%;
-    left: 70%;
-    padding: 20px 20px;
-    transform: translate(0%,-50%);
-    height: 270px;
-    width: 230px;
-    background-color: rgba(255, 255, 255, 0.315);
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
-}
 
-.offer{
-    display: flex;
-    flex-direction: column;
-    justify-self: space-between;
-    align-items: center;
-}
-
-.offer h2{
-    text-transform: capitalize;
-    color: white;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 400;
-}
-
-.offer p{
-    color: white;
-    text-align: center;
-    font-size: 12px;
-    margin-top: 20px;
-}
-
-.offer button{
-    margin-top: 20px;
-    border-radius: 9px;
-    height: 40px;
-    width: 170px;
-    color: white;
-    font-size: 12px;
-    outline: none;
-    background-color: transparent;
-    border: 2px solid white;
-}
-
-@media (min-width: 200px) and (max-width: 750px) {
- #offercards {
-   display: none;
-  }
-}
-*/
 
 /*room-features*/
 #room_matches{
@@ -424,7 +354,7 @@ nav ul li a.btn-info:last-child:hover{
 }
 .feature_row img{
     width: 100px;
-margin-left: 35%;
+margin-left: 40%;
         border: 1px solid #f1f1f1;
     box-shadow: 5px black;
 }
@@ -432,7 +362,7 @@ margin-left: 35%;
     margin-bottom: 15px;
     font-size: 26px;
     font-weight: 400;
-    margin-left: 40%;
+    text-align: center;
 }
 /*popular stay*/
 
@@ -462,7 +392,7 @@ margin-left: 35%;
     height: 45px;
     border-bottom: 1px solid #5e5e5e;
 }
-.filter-button
+#popular_Stay .filter-button
 {
     text-align: center;
     color: black;
@@ -508,7 +438,7 @@ margin-left: 35%;
 .image-content{
  
     border: 1px solid #f1f1f1;
-    box-shadow: 2px 2px #000;
+ 
 }
 .image-content .image-second-part{
      text-align: center;
@@ -528,20 +458,21 @@ margin-left: 35%;
 /*footer*/
 #footer_section{
     padding:40px 0;
-/*      position: relative;*/
-/*
-color: #fff;
-    background: black;
-*/
+background: #141414;
+    color: white;
 }
-#footer_section p{
-    text-align: center;
+#footer_section h4{
+    color: #ccc;
+    font-size: 22px;
+}
+#footer_section .account ul{
+   list-style: none; 
 }
 #footer_section form input{
     border-radius: 10px;
        font-size: 20px;
      border: 1px solid #f1f1f1;
-  box-shadow: 2px 2px #888888;
+/*  box-shadow: 2px 2px #888888;*/
     color: #ff4600;
 }
 #footer_section form input::placeholder{
@@ -551,53 +482,82 @@ color: #fff;
 #footer_section .btn-info{
    background: #FF4600;
     color: white;
-    width: 20%;
+    width: 55%;
     font-size: 20px;
-    border: 1px solid #f1f1f1;
-     border-radius: 10px;
-     box-shadow: 2px 2px #f1f1f1;
+/*    border: 1px solid #f1f1f1;*/
+     border-radius: 5px;
+/*     box-shadow: 2px 2px #f1f1f1;*/
 }
 #footer_section .btn-info:hover{
     cursor: pointer;
     background: white;
     color: #ff4600;
 }
-#footer_section ul{
-    list-style: none;
-}
 #footer_section ul li{
     list-style: none;
- display: inline-block;
-margin: 5px;
-    font-size: 20px;
+    
 }
 #footer_section ul li a{
+ 
+    font-family: calibri;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+      
+}
+
+#footer_section ul li a{
     text-decoration: none;
-    color: #000;
+          color: #dadfe0;
 }
 #footer_section ul li a:hover{
     color: #ff4600;
    transition: 0.5s;
 }
-#footer_section icon{
+#footer_section a.icon{
+    padding-top: 20px; 
+    font-family: calibri;
+    font-size: 16px;
+    line-height: 26px;
+     color: #ccc;
+    text-decoration: none;
+}
+#footer_section a .icon1{
+    border: 2px solid #ccc;
     padding-top: 10px;
+    padding-left: 10px;
+    padding: 15px;
+    border-radius: 5px;
+
 }
-/*social icon*/
-.social_icon {
-    width: 50px;
-    position: fixed;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    z-index: 1;
-/*    line-height: 10px;*/
+#footer_section a .icon2{
+    border: 2px solid #ccc;
+    padding-top: 10px;
+     padding: 15px;
+     padding-left: 10px;
+        border-radius: 5px;
+
 }
-.social_icon img{
-    width:30px;
-    margin-top: 0 auto 20px;
-    display: block;
-    cursor: pointer;
+#footer_section a .icon3{
+    border: 2px solid #ccc;
+    padding-top: 10px;
+     padding: 15px;
+        border-radius: 5px;
+   
 }
+#footer_section a .icon1:hover{
+  color:  #3b5998;
+
+}
+#footer_section a .icon2:hover{
+   color:  #00acee;
+
+}
+#footer_section a .icon3:hover{
+   color:#db4a39
+   
+}
+
 @media only screen and (max-width:770px){
    #header .background{
         display: none;
@@ -607,14 +567,10 @@ margin: 5px;
     background-size: cover;
     height: 100px;
     width: 100px;
+        position: fixed;
 /*    margin-top: 30px;*/
 }
-#header #header-text{
-    max-width: 400px;
-    margin-top: 100px;
-        margin-left: 10px;
-       
-}
+
     #header .call{
 display: none;
 }
@@ -626,7 +582,8 @@ h1{
 }
     #Menubtn{
    width: 40px;
-    right: 50px;
+    right: 5px;
+        top: 3%;
 }
 .social_icon img{
     width:30px;
@@ -650,27 +607,91 @@ h1{
     #topnavleftsection{
         display: none;
     }
-    #background .images{
-        display: none;
+      #imageslider{
+       bottom: 8%;
     }
-#mainpageleftsection{
-    text-align: center;
+    .row.no-pad {
+  margin-right:0;
+  margin-left:0;
+   margin-top: -47px;
 }
-#mainpageleftsection{
-width: 100%;
-    margin-left: 18%;
-    margin-top: 120px;
-}}
+.bhk_form input,select{
+    border-top-left-radius:10px;
+     color: #ff4600;
+    font-size: 20px;
+    height: 60px;
+    width: 343px;
+     border-bottom: 1px solid #f1f1f1;
+    border-left: 1px solid #f1f1f1;
+  box-shadow: -5px 0px 3px 0px rgba(232, 232, 232, 1)
+
+}
+.bhk_form input{
+    border-right: none;
+    border-top: none;
+    border-top-right-radius:10px; 
+}
+.bhk_form input,select::placeholder{
+   
+     color:black;
+}
+.bhk_form select{
+    font-size: 20px;
+      border-right: none;
+}
+.bhk_form .btn{
+           margin-left: 94px;
+    color: #ff4600;
+    font-size: 20px;
+        height: 60px;
+    background: white;
+    border-bottom: 1px solid #f1f1f1;
+      font-weight: normal;
+      box-shadow: -5px 0px 3px 0px rgba(232, 232, 232, 1)
+
+}
+
+/* For demo purposes only */
+
+i { display:block; position:relative; }
+h2 { margin-top:30px; }
+ }
+
 @media only screen and (max-width:1024px){
       #header .call{
 display: none;
 }
-    
+ .bhk_form span{
+    position:absolute;
+    right: 308px;
+    top: 23px;
+}   
 }
 
-/*
-@media (min-width: 1024px) {
-    #footer_section {
-        position: static;
+@media screen and (min-device-width: 320px){ 
+    /* STYLES HERE */
+    #mainpageleftsection #text{
+            left: 44%;
+                top: 53%;
     }
-}*/
+    #mainpageleftsection #text{
+            margin-bottom: 35px;
+    font-size: 38px;
+ 
+    }
+    #imageslider{
+        border-top-left-radius: 66px;
+          bottom: 5%;
+    }
+        #Menubtn{
+
+    right: 10px;
+}
+}
+  @media only screen and (min-width: 1024px) {
+      /* For landscape layouts only */
+            #Menubtn{
+
+    right: 39px;
+}
+    }
