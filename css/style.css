@@ -615,21 +615,17 @@ h1{
   margin-left:0;
    margin-top: -47px;
 }
-.bhk_form input,select{
-    border-top-left-radius:10px;
-     color: #ff4600;
-    font-size: 20px;
-    height: 60px;
-    width: 343px;
-     border-bottom: 1px solid #f1f1f1;
-    border-left: 1px solid #f1f1f1;
-  box-shadow: -5px 0px 3px 0px rgba(232, 232, 232, 1)
-
-}
 .bhk_form input{
-    border-right: none;
-    border-top: none;
-    border-top-right-radius:10px; 
+   color: black;
+    margin: 39px;
+    border: 1px solid #ff4600;
+        margin-left: -1px;
+        width: 100%;
+}
+.bhk_form span {
+    position: absolute;
+    right: 361px;
+    top: 60px;
 }
 .bhk_form input,select::placeholder{
    
@@ -641,31 +637,33 @@ h1{
 }
 .bhk_form .btn{
            margin-left: 94px;
-    color: #ff4600;
-    font-size: 20px;
-        height: 60px;
-    background: white;
-    border-bottom: 1px solid #f1f1f1;
-      font-weight: normal;
-      box-shadow: -5px 0px 3px 0px rgba(232, 232, 232, 1)
+    color: white;
+    background:#ff4600;
 
 }
-
-/* For demo purposes only */
-
-i { display:block; position:relative; }
-h2 { margin-top:30px; }
  }
-
-@media only screen and (max-width:1024px){
-      #header .call{
-display: none;
 }
+@media only screen and (min-width: 768px)  {
+    
+    .bhk_form input {
+/*    margin-left: -43px;*/
+}
+}
+@media only screen and (max-width:1024px){
+
  .bhk_form span{
     position:absolute;
-    right: 308px;
+    right: 197px;
     top: 23px;
 }   
+    .bhk_form{
+        
+            margin-left: -328px;
+    margin-top: -37px;
+    }
+    .bhk_form input {
+    margin-left: -43px;
+}
 }
 
 @media screen and (min-device-width: 320px){ 
